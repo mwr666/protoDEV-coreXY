@@ -1,10 +1,9 @@
 # protoDEV coreXY
-
 coreXY direct drive extruder 3D printer running Smootieware firmware
 
 ---------------------------------------------------------------------
 
- ==About:
+ == About:
  
  What is working here?
  
@@ -41,7 +40,7 @@ coreXY direct drive extruder 3D printer running Smootieware firmware
  
 ---------------------------------------------------------------------
  
- ==Features:
+ == Features:
  
  * 32bit Smoothieware firmware for smooth motion
  * no-crossing belts symetrical coreXY for hi-torque and stiffness
@@ -58,7 +57,7 @@ coreXY direct drive extruder 3D printer running Smootieware firmware
  
 ---------------------------------------------------------------------
  
- ==TODO:
+ == TODO:
  
  * cleanup in filenames / solidworks project
  
@@ -84,5 +83,5 @@ coreXY direct drive extruder 3D printer running Smootieware firmware
 
  ---------------------------------------------------------------------
  
- ==Contact: mw@protodev.pl
+ == Contact: mw@protodev.pl
  
