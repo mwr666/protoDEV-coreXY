@@ -38,6 +38,8 @@ coreXY direct drive extruder 3D printer running Smootieware firmware
  or >200g by changing steel rods and LM8UU to carbon fiber pipes and polymer Igus linear bearings.
  Hiwin is hevier then carbon pipes but the hiwin cartige has lot stiffer moves than LM8UU/IGUS bearings.
  
+---------------------------------------------------------------------
+ 
  Features:
  
  - 32bit Smoothieware firmware for smooth motion
@@ -53,10 +55,13 @@ coreXY direct drive extruder 3D printer running Smootieware firmware
  - 12V system printing up to 220mm/s and accleration at 3500mm/s2 (on 24V theoretical >375mm/s)
  - all of non-printed parts was selected to be worldwide availabe and have resonable price to quality ratio.
  
+---------------------------------------------------------------------
+ 
  TODO:
  
- -Cleanup filenames in solidworks project
- -Cleanup stl folder (right now it's pure project .stl dump, so lots of files not need to be printed)
+ -cleanup - filenames in solidworks project
+ -cleanup - stl folder (right now it's pure project .stl dump, so lots of files not need to be printed)
+ -heatbed build instructions
  -fist of parts
  -build instruction
  -firmware/software manual
@@ -66,4 +71,7 @@ coreXY direct drive extruder 3D printer running Smootieware firmware
  -Build a test carbon fiber rods + igus bearings x-axis
  -???
 
+ ---------------------------------------------------------------------
+ 
+ Contact: mw@protodev.pl
  
