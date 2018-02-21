@@ -3,7 +3,7 @@ coreXY direct drive extruder 3D printer running Smootieware firmware
 
 ---------------------------------------------------------------------
 
- About:
+ <b>About:</b>
  
  What is working here?
  
@@ -40,7 +40,7 @@ coreXY direct drive extruder 3D printer running Smootieware firmware
  
 ---------------------------------------------------------------------
  
- Features:
+ <b>Features:</b>
  
  - 32bit Smoothieware firmware for smooth motion
  - no-crossing belts symetrical coreXY for hi-torque and stiffness
@@ -57,21 +57,31 @@ coreXY direct drive extruder 3D printer running Smootieware firmware
  
 ---------------------------------------------------------------------
  
- TODO:
+ <b>TODO:</b>
  
- -cleanup - filenames in solidworks project
- -cleanup - stl folder (right now it's pure project .stl dump, so lots of files not need to be printed)
+ -cleanup filenames in solidworks project
+ 
+ -cleanup stl folder (right now it's pure project .stl dump, so lots of files not need to be printed)
+ 
  -heatbed build instructions
+ 
  -fist of parts
+ 
  -build instruction
+ 
  -firmware/software manual
- -BOM for all non-printed parts 
+ 
+ -BOM for all non-printed parts
+ 
  -Test 24V system theoretical print speed >375mm/s 
+ 
  -Build a test Hiwin x-axis 
+ 
  -Build a test carbon fiber rods + igus bearings x-axis
+ 
  -???
 
  ---------------------------------------------------------------------
  
- Contact: mw@protodev.pl
+ <b>Contact: mw@protodev.pl</b>
  
