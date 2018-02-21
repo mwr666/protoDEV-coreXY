@@ -1,9 +1,7 @@
 # protoDEV coreXY
 coreXY direct drive extruder 3D printer running Smootieware firmware
 
----------------------------------------------------------------------
-
- == About:
+==About:
  
  What is working here?
  
@@ -38,9 +36,7 @@ coreXY direct drive extruder 3D printer running Smootieware firmware
  or >200g by changing steel rods and LM8UU to carbon fiber pipes and polymer Igus linear bearings.
  Hiwin is hevier then carbon pipes but the hiwin cartige has lot stiffer moves than LM8UU/IGUS bearings.
  
----------------------------------------------------------------------
- 
- == Features:
+==Features:
  
  * 32bit Smoothieware firmware for smooth motion
  * no-crossing belts symetrical coreXY for hi-torque and stiffness
@@ -55,9 +51,8 @@ coreXY direct drive extruder 3D printer running Smootieware firmware
  * 12V system printing up to 220mm/s and accleration at 3500mm/s2 (on 24V theoretical >375mm/s)
  * all of non-printed parts was selected to be worldwide availabe and have resonable price to quality ratio.
  
----------------------------------------------------------------------
  
- == TODO:
+==TODO:
  
  * cleanup in filenames / solidworks project
  
@@ -81,7 +76,6 @@ coreXY direct drive extruder 3D printer running Smootieware firmware
  
  * ???
 
- ---------------------------------------------------------------------
  
- == Contact: mw@protodev.pl
+==Contact: mw@protodev.pl
  
