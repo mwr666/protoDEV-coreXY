@@ -1,5 +1,7 @@
 # protoDEV coreXY
-coreXY direct drive extruder 3D printer running Smootieware firmware
+<b>coreXY direct drive extruder 3D printer running Smootieware firmware</b>
+
+-------------------------------------------------------------------------------------------- 
 
 <b>About:</b>
  
