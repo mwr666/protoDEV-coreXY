@@ -1,9 +1,10 @@
-# protoDEV-coreXY
+# protoDEV coreXY
+
 coreXY direct drive extruder 3D printer running Smootieware firmware
 
 ---------------------------------------------------------------------
 
- <b>About:</b>
+ ==About:
  
  What is working here?
  
@@ -40,48 +41,48 @@ coreXY direct drive extruder 3D printer running Smootieware firmware
  
 ---------------------------------------------------------------------
  
- <b>Features:</b>
+ ==Features:
  
- - 32bit Smoothieware firmware for smooth motion
- - no-crossing belts symetrical coreXY for hi-torque and stiffness
- - geared direct drive extuder (simpler and more reliable printing then bowden)
- - hi-flow quality hotend (e3d hotend with volcano heat block) for high quality fast printing
- - all axis with 2x higher mechanical resolution at same steprate (0.9deg motors with 8x microstepping)
- - one motor doubble z-axis (no problems to sync motors because got just one for both bed side lifters)
- - all axis motors mounted at bottom of printer to lower the center of gravity 
+ * 32bit Smoothieware firmware for smooth motion
+ * no-crossing belts symetrical coreXY for hi-torque and stiffness
+ * geared direct drive extuder (simpler and more reliable printing then bowden)
+ * hi-flow quality hotend (e3d hotend with volcano heat block) for high quality fast printing
+ * all axis with 2x higher mechanical resolution at same steprate (0.9deg motors with 8x microstepping)
+ * one motor doubble z-axis (no problems to sync motors because got just one for both bed side lifters)
+ * all axis motors mounted at bottom of printer to lower the center of gravity 
     (if your printer likes jumping all over the room when printing, 
 	lowering the center of gravity near ground can compensate the "heavy mass" 
 	running in XY directions at top of printer pulling the lighter lower part of system )
- - 12V system printing up to 220mm/s and accleration at 3500mm/s2 (on 24V theoretical >375mm/s)
- - all of non-printed parts was selected to be worldwide availabe and have resonable price to quality ratio.
+ * 12V system printing up to 220mm/s and accleration at 3500mm/s2 (on 24V theoretical >375mm/s)
+ * all of non-printed parts was selected to be worldwide availabe and have resonable price to quality ratio.
  
 ---------------------------------------------------------------------
  
- <b>TODO:</b>
+ ==TODO:
  
- -cleanup filenames in solidworks project
+ * cleanup in filenames / solidworks project
  
- -cleanup stl folder (right now it's pure project .stl dump, so lots of files not need to be printed)
+ * cleanup in stl folder (right now it's pure project .stl dump, so lots of files not need to be printed)
  
- -heatbed build instructions
+ * heatbed build instructions
  
- -fist of parts
+ * fist of parts
  
- -build instruction
+ * build instruction
  
- -firmware/software manual
+ * firmware/software manual
  
- -BOM for all non-printed parts
+ * BOM for all non-printed parts
  
- -Test 24V system theoretical print speed >375mm/s 
+ * test 24V system theoretical print speed >375mm/s 
  
- -Build a test Hiwin x-axis 
+ * build a test Hiwin x-axis 
  
- -Build a test carbon fiber rods + igus bearings x-axis
+ * build a test carbon fiber rods + igus bearings x-axis
  
- -???
+ * ???
 
  ---------------------------------------------------------------------
  
- <b>Contact: mw@protodev.pl</b>
+ ==Contact: mw@protodev.pl
  
