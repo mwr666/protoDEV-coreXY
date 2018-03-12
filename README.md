@@ -31,13 +31,6 @@
  
  I wanted to print with parameters equal to Prusa i3 Mk3 and now got even beyond... 
  
- The next big thing comming... 24V power supply upgrade. 
- I've calculated thet in theory the system should run print speeds beyond 375mm/s
- To make the mechanics hold up the new speed need to loose some x-axis weight.
- The idea is to lose >100g by changing 2x 8mm steel rods with 1x hiwin rail
- or >200g by changing steel rods and LM8UU to carbon fiber pipes and polymer Igus linear bearings.
- Hiwin is hevier then carbon pipes but the hiwin cartige has lot stiffer moves than LM8UU/IGUS bearings.
- 
 -------------------------------------------------------------------------------------------- 
  
 <b>Features:</b>
@@ -52,7 +45,8 @@
     (if your printer likes jumping all over the room when printing, 
 	lowering the center of gravity near ground can compensate the "heavy mass" 
 	running in XY directions at top of printer pulling the lighter lower part of system )
- * 12V system printing up to 220mm/s and accleration at 3500mm/s2 (on 24V theoretical >375mm/s)
+ * 12V system speed up to 220mm/s and acceleration at 3500mm/s2 
+ * 24V system speed up to 375mm/s and acceleration at 4500mm/s2
  * all of non-printed parts was selected to be worldwide availabe and have resonable price to quality ratio.
 
 -------------------------------------------------------------------------------------------- 
@@ -73,11 +67,11 @@
  
  * BOM for all non-printed parts
  
- * test 24V system theoretical print speed >375mm/s 
+ <font color="green"><s>* test 24V system theoretical print speed >375mm/s</s> <b>*done & working></b></font>
  
- * build a test Hiwin x-axis 
+ <font color="green"><s>* build a test Hiwin x-axis</s> <b>*done & working></b></font>
  
- * build a test carbon fiber rods + igus bearings x-axis
+ <font color="red"><s>* build a test carbon fiber rods + igus bearings x-axis</s> <b>*done - don't like it></b></font>
  
  * ???
 
