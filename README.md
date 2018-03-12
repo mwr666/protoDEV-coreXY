@@ -67,11 +67,11 @@
  
  * BOM for all non-printed parts
  
- <font color="green"><s>* test 24V system theoretical print speed >375mm/s</s> <b>*done & working</b></font>
+*  <font color="green"><s>test 24V system theoretical print speed >375mm/s</s> <b>*done & working</b></font>
  
- <font color="green"><s>* build a test Hiwin x-axis</s> <b>*done & working</b></font>
+ * <font color="green"><s>build a test Hiwin x-axis</s> <b>*done & working</b></font>
  
- <font color="red"><s>* build a test carbon fiber rods + igus bearings x-axis</s> <b>*done - don't like it</b></font>
+*  <font color="red"><s>build a test carbon fiber rods + igus bearings x-axis</s> <b>*done - don't like it</b></font>
  
  * ???
 
