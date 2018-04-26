@@ -89,4 +89,6 @@
 --------------------------------------------------------------------------------------------
  
 <b>Contact: mw@protodev.pl</b>
+
+<b>https://www.thingiverse.com/thing:2119644 big thx for superb spool system from Spanner Hands http://www.spannerhands.co.uk/<b>
  
