@@ -51,15 +51,15 @@
  
 <b>TODO:</b>
  
- * add latest 24V-hiwin-tmc2208 project files 
+ * <font color="green">add latest 24V-hiwin-tmc2208 project files <b>*done</b></font> 
  
  * cleanup in filenames / solidworks project
  
- * cleanup in stl folder (right now it's pure project .stl dump, so lots of files not need to be printed)
+ * <font color="green">cleanup in stl folder (right now it's pure project .stl dump, so lots of files not need to be printed) <b>*done</b></font>
  
  * heatbed build instructions
  
- * list of parts
+ * <font color="green">list of parts <b>*done</b></font>
  
  * build instruction
  
