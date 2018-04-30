@@ -62,6 +62,8 @@
  
  * 3rd party controler boards support (actual controler price to high?)
  
+ * automatic parts removal system for batch 3printing
+ 
  * <font color="green"><s>add latest 24V-hiwin-tmc2208 project files</s> <b>*done</b></font> 
  
  * cleanup in filenames / solidworks project
