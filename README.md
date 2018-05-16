@@ -12,16 +12,21 @@
  This is not an another incomplete "work in progress" project.
  It's a work in progress that has improvment in mind.
  
- I'm into 3dprinting in years, and active building 3d printers for most of that time.
- Learned a lot thanks to the community... and specially from community based systems like Prusa's.
- Internet is a place were some got news, youtube, porn...
- and some having nerd stuff... software, mechanical, electrical and electronical articles, blogs, vlogs, faqs etc.
- If you are a tech Nerd just like me, you can find tons of very interesting educational articles that can build up your knowlage until...
- for me everything ended up here on GitHub.
- Why?
- because was living the 3dprinter hype and tested all the bullshit and non-bulshit projects on te planet.
+ What is working here? 
+
+ Hmmm... Everything? 
+
+ This is not an another incomplete "work in progress" project. It's a work in progress project that has improvement in mind. 
+
+ I'm into 3d printing for few years, and active building 3d printers for most of that time. Learned a lot thanks to the community... 
+ and specially from community based systems like Prusa's. Internet is a place were some got news, youtube, porn... 
+ and some having nerd stuff... software, mechanical, electrical and electronics articles, blogs, vlogs, faqs etc. 
+ If you are a tech Nerd just like me, you can find tons of very interesting educational articles that can build up your knowledge until... 
+ for me everything ended up here on GitHub. 
  
- Now it's time to share some of the knowlage just like all those people all over the world shared with me.
+ Why? because was living the 3d printer hype and tested all the bullshit and non-bulshit projects on te planet. 
+
+ Now it's time to share some of the knowledge just like all those people all over the world shared with me. 
  
  My goal is to gather some people that will/want to build, use and improve the project.
  I've spent over 3 months working on the Cad3D part (SolidWorks) of the project to make parts simple to print and simple for makers to assembly.
@@ -37,6 +42,7 @@
 <b>Features:</b>
 
  * build plate 245 x 245 x 300 mm ( X x Y x Z )
+ * automatic parts removal 
  * 32bit Smoothieware firmware for smooth motion
  * e3d volcano hotend with hartened steel 0.4mm nozzle
  * TMC2208 silent stepper drivers - spread cycle setup with step interpolarisation 1/256 
@@ -62,7 +68,7 @@
  
  * 3rd party controler boards support (actual controler price to high?)
  
- * automatic parts removal system for batch 3printing
+ * automatic parts removal system test and firmware development for batch 3printing
  
  * <font color="green"><s>add latest 24V-hiwin-tmc2208 project files</s> <b>*done</b></font> 
  
