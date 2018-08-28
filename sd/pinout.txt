@@ -1,0 +1,3 @@
+P1.21		LED3		Pad4		led4		            h/w PWM capable. can be free if leds_disable is set true in config.
+P1.24		-		    Pad7		alpha_min_endstop		h/w PWM capable
+P3.26		-			Pad14		spare					used for encoder pin for all panels, h/w PWM capable
