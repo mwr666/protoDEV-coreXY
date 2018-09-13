@@ -5,28 +5,19 @@
 
 <b>About:</b>
  
- What is working here?
- 
- Hmmm... Everything? 
- 
- This is not an another incomplete "work in progress" project.
- It's a work in progress that has improvment in mind.
- 
  What is working here? 
 
- Hmmm... Everything? 
+Hmmm... most important... it can 3d-print 24/7. 
 
- This is not an another incomplete "work in progress" project. It's a work in progress project that has improvement in mind. 
+This is not an another incomplete "work in progress" project. It's a work in progress project that has improvement in mind. 
 
- I'm into 3d printing for few years, and active building 3d printers for most of that time. Learned a lot thanks to the community... 
- and specially from community based systems like Prusa's. Internet is a place were some got news, youtube, porn... 
- and some having nerd stuff... software, mechanical, electrical and electronics articles, blogs, vlogs, faqs etc. 
- If you are a tech Nerd just like me, you can find tons of very interesting educational articles that can build up your knowledge until... 
- for me everything ended up here on GitHub. 
- 
- Why? because was living the 3d printer hype and tested all the bullshit and non-bulshit projects on te planet. 
+I'm into 3d printing for few years, and active building 3d printers for most of that time. Learned a lot thanks to the community... 
+and specially from community based systems like Prusa's. Internet is a place were some got news, youtube, porn... 
+and some having nerd stuff... software, mechanical, electrical and electronics articles, blogs, vlogs, faqs etc. 
+If you are a tech Nerd just like me, you can find tons of very interesting educational articles that can build up your knowledge until... 
+for me everything ended up here on GitHub. Why? because was living the 3d printer hype and tested all the bullshit and non-bulshit projects on te planet. 
 
- Now it's time to share some of the knowledge just like all those people all over the world shared with me. 
+Now it's time to share some of the knowledge just like all those people all over the world shared with me. 
  
  My goal is to gather some people that will/want to build, use and improve the project.
  I've spent over 3 months working on the Cad3D part (SolidWorks) of the project to make parts simple to print and simple for makers to assembly.
@@ -41,12 +32,11 @@
  
 <b>Features:</b>
 
- * build plate 245 x 245 x 300 mm ( X x Y x Z )
- * automatic parts removal 
+ * build plate 245 x 245 x 300 mm ( X x Y x Z ) 
  * 32bit Smoothieware firmware for smooth motion
  * e3d volcano hotend with hartened steel 0.4mm nozzle
  * TMC2208 silent stepper drivers - spread cycle setup with step interpolarisation 1/256 
- * geared (3:1) direct drive extuder (simpler and more reliable printing then bowden)
+ * geared (3:1) direct drive extuder with Bondtech dual drive gears(simpler and more reliable printing then bowden)
  * max speed up to 375mm/s 
  * heated build plate with PET film surface for superb material adhesion 
  * support of multiple filament types (PLA, PET, TPU)
@@ -57,6 +47,7 @@
  * one motor doubble z-axis (no shaft sync problems)
  * all axis motors mounted at bottom of printer to lower the center of gravity  
  * all of non-printed parts was selected to be worldwide availabe and have resonable price to quality ratio.
+ * automatic parts removal ( if got time or need for this add on to work - i've designed it and printed just waiting for software )
 
 -------------------------------------------------------------------------------------------- 
  
