@@ -28,7 +28,7 @@ junction_deviation                           0.03             # See http://smoot
 # Cartesian axis speed limits
 x_axis_max_speed                             22500            # Maximum speed in mm/min
 y_axis_max_speed                             22500            # Maximum speed in mm/min
-z_axis_max_speed                             300              # Maximum speed in mm/min
+z_axis_max_speed                             600              # Maximum speed in mm/min
 
 # Stepper module configuration 
 # Pins are defined as  ports, and pin numbers, appending "!" to the number will invert a pin
@@ -49,15 +49,15 @@ gamma_step_pin                               2.2              # Pin for gamma st
 gamma_dir_pin                                0.20             # Pin for gamma stepper direction, add '!' to reverse direction
 gamma_en_pin                                 0.19             # Pin for gamma enable
 gamma_current                                1.3              # Z stepper motor current
-gamma_max_rate                               300.0            # Maximum rate in mm/min
+gamma_max_rate                               600.0            # Maximum rate in mm/min
 
 ## Extruder module configuration
 # See http://smoothieware.org/extruder
 extruder.hotend.enable                          true          # Whether to activate the extruder module at all. All configuration is ignored if false
-extruder.hotend.steps_per_mm                    136.500       # Steps per mm for extruder stepper
+extruder.hotend.steps_per_mm                    207.500       # 136.500 Steps per mm for extruder stepper
 extruder.hotend.default_feed_rate               600           # Default rate ( mm/minute ) for moves where only the extruder moves
-extruder.hotend.acceleration                    500	          # Acceleration for the stepper motor mm/sec²
-extruder.hotend.max_speed                       80            # Maximum speed in mm/s
+extruder.hotend.acceleration                    1250 	      # Acceleration for the stepper motor mm/sec²
+extruder.hotend.max_speed                       120            # Maximum speed in mm/s
 
 extruder.hotend.step_pin                        2.3           # Pin for extruder step signal
 extruder.hotend.dir_pin                         0.22          # Pin for extruder dir signal ( add '!' to reverse direction )
@@ -116,7 +116,7 @@ laser_module_pwm_pin                          2.5             # This pin will be
 # First hotend configuration
 temperature_control.hotend.enable            true             # Whether to activate this ( "hotend" ) module at all.
 temperature_control.hotend.thermistor_pin    0.23             # Pin for the thermistor to read
-temperature_control.hotend.heater_pin        2.5              # Pin that controls the heater, set to nc if a readonly thermistor is being defined
+temperature_control.hotend.heater_pin        2.6              # Sunbeam should use 2.5 pin but my mosfet has died... Pin that controls the heater, set to nc if a readonly thermistor is being defined
 temperature_control.hotend.thermistor        Semitec          # See http://smoothieware.org/temperaturecontrol#toc5
 temperature_control.hotend.beta              4375             # Or set the beta value
 temperature_control.hotend.set_m_code        104              # M-code to set the temperature for this module
@@ -177,21 +177,12 @@ temperature_control.bed.max_temp         	 95              # Set maximum tempera
 # See http://smoothieware.org/switch
 
 # Switch module for fan control
-#switch.light.enable                            true          # Enable this module
-#switch.light.input_on_command                  M548          # Command that will turn this switch on
-#switch.light.input_off_command                 M549          # Command that will turn this switch off
-#switch.light.output_pin                        2.6           # Pin this module controls
-#switch.light.output_type                       digital       # PWM output settable with S parameter in the input_on_comand
-#switch.light.pwm_period_ms					    10		 	  #
-#switch.light.max_pwm                           255           # Set max pwm for the pin default is 255
-
-# Switch module for fan control
 switch.fan.enable                            true            # Enable this module
 switch.fan.input_on_command                  M106            # Command that will turn this switch on
 switch.fan.input_off_command                 M107            # Command that will turn this switch off
 switch.fan.output_pin                        1.18            # Pin this module controls
 switch.fan.output_type                       pwm             # PWM output settable with S parameter in the input_on_comand
-#switch.fan.max_pwm                           255             # Set max pwm for the pin default is 255
+switch.fan.max_pwm                           255             # Set max pwm for the pin default is 255
 
 switch.fan2.enable                      	 true            #
 switch.fan2.input_on_command            	 M150            #
@@ -199,7 +190,7 @@ switch.fan2.input_off_command           	 M151            #
 switch.fan2.output_pin                  	 1.19            #
 switch.fan2.output_type                      pwm             # PWM output settable with S parameter in the input_on_comand
 switch.fan2.startup_state               	 false           #
-switch.fan2.max_pwm                          210             # Set max pwm for the pin default is 255
+switch.fan2.max_pwm                          255             # Set max pwm for the pin default is 255
 
 switch.fan3.enable                           true            #
 switch.fan3.input_on_command                 M152            #
@@ -207,7 +198,7 @@ switch.fan3.input_off_command                M153            #
 switch.fan3.output_pin                       1.20            #
 switch.fan3.output_type                      pwm             # PWM output settable with S parameter in the input_on_comand
 switch.fan3.startup_state                    true            #
-switch.fan3.startup_value					 255			  #
+switch.fan3.startup_value					 255			 #
 switch.fan3.max_pwm                          255             # Set max pwm for the pin default is 255
 
 
@@ -281,7 +272,7 @@ beta_max                                     245             # This gets loaded 
 gamma_max_endstop                            1.29^           # Pin to read max endstop, uncomment this and comment the above if using max endstops
 gamma_homing_direction                       home_to_max     # Or set to home_to_max and set alpha_max and uncomment the alpha_max_endstop
 gamma_min                                    0               # This gets loaded as the current position after homing when home_to_min is set
-gamma_max                                    238.200         # This gets loaded as the current position after homing when home_to_max is set
+gamma_max                                    238.000         # This gets loaded as the current position after homing when home_to_max is set
 
 alpha_max_travel                             260             # Max travel in mm for alpha/X axis when homing
 beta_max_travel                              256             # Max travel in mm for beta/Y axis when homing
@@ -338,7 +329,7 @@ panel.click_button_pin                       2.11!           #
 panel.longpress_delay                        15				 #
 panel.hotend_temperature					 180		     # Temperature to set the hotend to when using the pre-heating menu item	
 panel.bed_temperature						 60				 # Temperature to set the bed to when using the pre-heating menu item
-panel.gamma_jog_feedrate                     500			 #
+panel.gamma_jog_feedrate                     1000			 #
 panel.display_extruder                       true            # enable to display Extruder position on the Watch screen when printing
 panel.external_sd                            true            # set to true if there is an extrernal sdcard on the panel
 panel.external_sd.spi_channel                0               # set spi channel the sdcard is on
@@ -348,14 +339,6 @@ panel.external_sd.sdcd_pin                   1.26!^          # sd detect signal 
 ## Custom menus : Example of a custom menu entry, which will show up in the Custom entry.
 # NOTE _ gets converted to space in the menu and commands, | is used to separate multiple commands
 #custom menu options
-
-#custom_menu.lighton.enable                    true           #
-#custom_menu.lighton.name                      Lights_ON      #
-#custom_menu.lighton.command                   M548           #
-
-#custom_menu.lightoff.enable                   true           #
-#custom_menu.lightoff.name                     Lights_OFF     #
-#custom_menu.lightoff.command                  M549           #
 
 custom_menu.zero.enable                      true            #
 custom_menu.zero.name                        Reset_Test_Zone #
@@ -425,6 +408,14 @@ play_led_pin                                 4.28!           #
 #kill_button_enable                           true            # Set to true to enable a kill button
 #kill_button_pin                              2.12            # Kill button pin. default is same as pause button 2.12 (2.11 is another good choice)
 
+# Switch module for servo control
+switch.servo.enable                            true             # Enable this module
+switch.servo.input_on_command                  M280             # M280 S7.5 would be midway
+switch.servo.input_off_command                 M281             # Same as M280 S0 0% duty cycle, effectively off
+switch.servo.output_pin                        1.21             # Must be a PWM capable pin
+switch.servo.output_type                       hwpwm            # H/W pwm output settable with S parameter in the input_on_comand
+#switch.servo.pwm_period_ms                    20               # set period to 20ms (50Hz) default is 50Hz
+
 ## Filament Sensor - switch
 
 #switch.filamentout.enable                    true            # Enable this module
@@ -435,8 +426,8 @@ play_led_pin                                 4.28!           #
 #switch.resume.input_pin                  	2.12             # Pin where resume button is connected
 #switch.resume.output_on_command          	resume           # Resume command
 
-after_suspend_gcode        G91_G0E-100_G0Z1_G90_G0X120Y0    # Gcode to run after suspend, retract then get head out of way
-before_resume_gcode        		G91_G1E1_G90             	# Gcode to run after temp is reached but before resume - do a prime
+#after_suspend_gcode        G91_G0E-100_G0Z1_G90_G0X120Y0    # Gcode to run after suspend, retract then get head out of way
+#before_resume_gcode        		G91_G1E1_G90             	# Gcode to run after temp is reached but before resume - do a prime
 
 #msd_disable                                 false            # Disable the MSD (USB SDCARD), see http://smoothieware.org/troubleshooting#disable-msd
 #dfu_enable                                  false            # For linux developers, set to true to enable DFU

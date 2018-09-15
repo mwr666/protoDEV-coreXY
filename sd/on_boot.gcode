@@ -1,5 +1,7 @@
+M280 S2.8
 M117 Homing all axis...
 G28
 G90
-G0Z235
+G0 Z235
 M117
+M281
