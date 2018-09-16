@@ -28,7 +28,7 @@ junction_deviation                           0.03             # See http://smoot
 # Cartesian axis speed limits
 x_axis_max_speed                             18000            # Maximum speed in mm/min
 y_axis_max_speed                             18000            # Maximum speed in mm/min
-z_axis_max_speed                             600              # Maximum speed in mm/min
+z_axis_max_speed                             1200             # Maximum speed in mm/min
 
 # Stepper module configuration 
 # Pins are defined as  ports, and pin numbers, appending "!" to the number will invert a pin
@@ -49,7 +49,7 @@ gamma_step_pin                               2.2              # Pin for gamma st
 gamma_dir_pin                                0.20             # Pin for gamma stepper direction, add '!' to reverse direction
 gamma_en_pin                                 0.19             # Pin for gamma enable
 gamma_current                                1.3              # Z stepper motor current
-gamma_max_rate                               600.0            # Maximum rate in mm/min
+gamma_max_rate                               1200.0           # Maximum rate in mm/min
 
 ## Extruder module configuration
 # See http://smoothieware.org/extruder
