@@ -20,14 +20,14 @@ gamma_steps_per_mm                           400              # Steps per mm for
 
 # Planner module configuration : Look-ahead and acceleration configuration
 # See http://smoothieware.org/motion-control
-acceleration                                 3000             # Acceleration in mm/second/second.
+acceleration                                 2500             # Acceleration in mm/second/second.
 z_acceleration                               100              # Acceleration for Z only moves in mm/s^2, 0 uses acceleration which is the default. DO NOT SET ON A DELTA
 junction_deviation                           0.03             # See http://smoothieware.org/motion-control#junction-deviation
 #z_junction_deviation                         0.0              # For Z only moves, -1 uses junction_deviation, zero disables junction_deviation on z moves DO NOT SET ON A DELTA
 
 # Cartesian axis speed limits
-x_axis_max_speed                             22500            # Maximum speed in mm/min
-y_axis_max_speed                             22500            # Maximum speed in mm/min
+x_axis_max_speed                             18000            # Maximum speed in mm/min
+y_axis_max_speed                             18000            # Maximum speed in mm/min
 z_axis_max_speed                             600              # Maximum speed in mm/min
 
 # Stepper module configuration 
@@ -37,13 +37,13 @@ alpha_step_pin                               2.0              # Pin for alpha st
 alpha_dir_pin                                0.5              # Pin for alpha stepper direction, add '!' to reverse direction
 alpha_en_pin                                 0.4              # Pin for alpha enable pin
 alpha_current                                1.3              # X stepper motor current
-alpha_max_rate                               31820.0          # Maximum rate in mm/min
+alpha_max_rate                               25500.0          # Maximum rate in mm/min
 
 beta_step_pin                                2.1              # Pin for beta stepper step signal
 beta_dir_pin                                 0.11             # Pin for beta stepper direction, add '!' to reverse direction
 beta_en_pin                                  0.10             # Pin for beta enable
 beta_current                                 1.3              # Y stepper motor current
-beta_max_rate                                31820.0          # Maxmimum rate in mm/min
+beta_max_rate                                25500.0          # Maxmimum rate in mm/min
 
 gamma_step_pin                               2.2              # Pin for gamma stepper step signal
 gamma_dir_pin                                0.20             # Pin for gamma stepper direction, add '!' to reverse direction
@@ -275,7 +275,7 @@ gamma_min                                    0               # This gets loaded 
 gamma_max                                    238.000         # This gets loaded as the current position after homing when home_to_max is set
 
 alpha_max_travel                             260             # Max travel in mm for alpha/X axis when homing
-beta_max_travel                              256             # Max travel in mm for beta/Y axis when homing
+beta_max_travel                              260             # Max travel in mm for beta/Y axis when homing
 gamma_max_travel                             240             # Max travel in mm for gamma/Z axis when homing
 
 # Optional enable limit switches, actions will stop if any enabled limit switch is triggered
@@ -361,20 +361,20 @@ custom_menu.cal4.name                        Check_Center    #
 custom_menu.cal4.command                G0X122.5Y122.5F7000  #
 
 custom_menu.test0.enable                     true            #
-custom_menu.test0.name                       Speed_375_\     #
-custom_menu.test0.command            G1X245Y0F22500|G1X0Y245 #
+custom_menu.test0.name                       Speed_300_\     #
+custom_menu.test0.command            G1X245Y0F18000|G1X0Y245 #
 
 custom_menu.test1.enable                     true            #
-custom_menu.test1.name                       Speed_375_/     #
-custom_menu.test1.command            G1X0Y0F22500|G1X240Y240 #
+custom_menu.test1.name                       Speed_300_/     #
+custom_menu.test1.command            G1X0Y0F18000|G1X240Y240 #
 
 custom_menu.test2.enable                     true            #
-custom_menu.test2.name                       Speed_375_-     #
-custom_menu.test2.command          G1X0Y120F22500|G1X240Y120 #
+custom_menu.test2.name                       Speed_300_-     #
+custom_menu.test2.command          G1X0Y120F18000|G1X240Y120 #
 
 custom_menu.test3.enable                     true            #
-custom_menu.test3.name                       Speed_375_|     #
-custom_menu.test3.command          G1X120Y0F22500|G1X120Y240 #
+custom_menu.test3.name                       Speed_300_|     #
+custom_menu.test3.command          G1X120Y0F18000|G1X120Y240 #
 
 ## Network settings
 # See http://smoothieware.org/network
