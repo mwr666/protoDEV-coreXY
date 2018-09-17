@@ -37,29 +37,33 @@ Now it's time to share some of the knowledge just like all those people all over
  * e3d volcano hotend with hartened steel 0.4mm nozzle
  * TMC2208 silent stepper drivers - spread cycle setup with step interpolarisation 1/256 
  * geared (3:1) direct drive extuder with Bondtech dual drive gears(simpler and more reliable printing then bowden)
- * max speed up to 375mm/s 
+ * max speed up to 300mm/s 
  * heated build plate with PET film surface for superb material adhesion 
  * support of multiple filament types (PLA, PET, TPU)
  * filament run-out sensor
- * non-X-crossing belts - symetrical coreXY for hi-torque and stiffness
+ * coreXY with proper belt alignment for hi-torque and stiffness
  * hi-flow quality hotend (e3d hotend with volcano heat block) for high quality and fast printing
  * all axis with 2x higher mechanical resolution at same step rate (0.9deg 1/8 step = 1.8deg 1/16 step)
  * one motor doubble z-axis (no shaft sync problems)
  * all axis motors mounted at bottom of printer to lower the center of gravity  
  * all of non-printed parts was selected to be worldwide availabe and have resonable price to quality ratio.
+ * enclosure
+ * automatic nozzle cleaner
  * automatic parts removal ( if got time or need for this add on to work - i've designed it and printed just waiting for software )
 
 -------------------------------------------------------------------------------------------- 
  
 <b>TODO:</b>
 
- * less budget print cooling system (fan replacment)
+ * add enclosure files prepared for laser cutting
+
+ * find quiet print cooling fans replacement
  
- * enclosure project with over-temperature controll
+ * enclosure over-temperature control
  
  * 3rd party controler boards support (actual controler price to high?)
  
- * automatic parts removal system test and firmware development for batch 3printing
+ * apr addon (automatic parts removal) test and firmware development for batch 3d printing
  
  * <font color="green"><s>add latest 24V-hiwin-tmc2208 project files</s> <b>*done</b></font> 
  
