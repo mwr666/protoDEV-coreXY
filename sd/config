@@ -28,7 +28,7 @@ junction_deviation                           0.03             # See http://smoot
 # Cartesian axis speed limits
 x_axis_max_speed                             18000            # Maximum speed in mm/min
 y_axis_max_speed                             18000            # Maximum speed in mm/min
-z_axis_max_speed                             1200             # Maximum speed in mm/min
+z_axis_max_speed                             1200              # Maximum speed in mm/min
 
 # Stepper module configuration 
 # Pins are defined as  ports, and pin numbers, appending "!" to the number will invert a pin
@@ -49,7 +49,7 @@ gamma_step_pin                               2.2              # Pin for gamma st
 gamma_dir_pin                                0.20             # Pin for gamma stepper direction, add '!' to reverse direction
 gamma_en_pin                                 0.19             # Pin for gamma enable
 gamma_current                                1.3              # Z stepper motor current
-gamma_max_rate                               1200.0           # Maximum rate in mm/min
+gamma_max_rate                               1200.0            # Maximum rate in mm/min
 
 ## Extruder module configuration
 # See http://smoothieware.org/extruder
@@ -394,7 +394,7 @@ network.hostname							 protoDEV		 # Some DHCP servers accept a hostname for the
 # For communication over the UART port, *not* the USB/Serial port
 uart0.baud_rate                              115200          # Baud rate for the default hardware ( UART ) serial port
 
-second_usb_serial_enable                     false           # This enables a second USB serial port
+second_usb_serial_enable                     true            # This enables a second USB serial port
 leds_disable                                 true            # Disable using leds after config loaded
 play_led_disable                             true            # Disable the play led
 play_led_pin                                 4.28!           #
@@ -414,20 +414,20 @@ switch.servo.input_on_command                  M280             # M280 S7.5 woul
 switch.servo.input_off_command                 M281             # Same as M280 S0 0% duty cycle, effectively off
 switch.servo.output_pin                        1.21             # Must be a PWM capable pin
 switch.servo.output_type                       hwpwm            # H/W pwm output settable with S parameter in the input_on_comand
-#switch.servo.pwm_period_ms                    20               # set period to 20ms (50Hz) default is 50Hz
+#switch.servo.pwm_period_ms                     20               # set period to 20ms (50Hz) default is 50Hz
 
 ## Filament Sensor - switch
 
 #switch.filamentout.enable                    true            # Enable this module
 #switch.filamentout.input_pin                 1.21^!          # Pin where filament out button is connected
-#switch.filamentout.output_on_command 		 suspend 		 # Suspend command
+#switch.filamentout.output_on_command 		 suspend 		  # Suspend command
 
-#switch.resume.enable                     	true             # Enable this module
-#switch.resume.input_pin                  	2.12             # Pin where resume button is connected
-#switch.resume.output_on_command          	resume           # Resume command
+switch.resume.enable                     	true             # Enable this module
+switch.resume.input_pin                  	2.12             # Pin where resume button is connected
+switch.resume.output_on_command          	resume           # Resume command
 
-#after_suspend_gcode        G91_G0E-100_G0Z1_G90_G0X120Y0    # Gcode to run after suspend, retract then get head out of way
-#before_resume_gcode        		G91_G1E1_G90             	# Gcode to run after temp is reached but before resume - do a prime
+after_suspend_gcode        G91_G0Z1_G90_G0X120Y0    		 # G91_G0E-100_G0Z1_G90_G0X120Y0 Gcode to run after suspend, retract then get head out of way
+before_resume_gcode        		M117		             	 # G91_G1E1_G90 Gcode to run after temp is reached but before resume - do a prime
 
 #msd_disable                                 false            # Disable the MSD (USB SDCARD), see http://smoothieware.org/troubleshooting#disable-msd
 #dfu_enable                                  false            # For linux developers, set to true to enable DFU
